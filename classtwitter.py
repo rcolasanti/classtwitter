@@ -23,14 +23,14 @@
 #
 #  
 
-import tkinter.scrolledtext as tkst
 import tweepy
 import json
 import datetime
 import time
 import sys
 
-from tkinter import *
+from ScrolledText import *
+from Tkinter import *
 # File contining the twitter keys
 from twitterinit import cfg,account
 from matplotlib.figure import Figure
@@ -40,7 +40,7 @@ class TkinterText(Frame):
     def __init__(self, parent):
         # Frame containing a Scrolled text to display tweet and sender 
         Frame.__init__(self, parent)
-        self.txt = tkst.ScrolledText(self, undo=True)
+        self.txt = ScrolledText(self, undo=True)
         self.txt['font'] = ('arial', '15')
         self.txt.tag_configure('bold_italics', font=('Arial', 18, 'italic'))
         self.txt.tag_configure('big', foreground='gray',font=('Arial', 18,'bold'))
@@ -104,7 +104,7 @@ class TkTwitter:
             if not tweet.id in self.results:
                 # Only place tweets that have been sent after the 
                 # program has started
-                print(tweet.created_at+ datetime.timedelta(hours=1),self.time_start)
+                # DEBUG print(tweet.created_at+ datetime.timedelta(hours=1),self.time_start)
                 if (tweet.created_at+ datetime.timedelta(hours=1))>self.time_start:
                     self.f1.add_sender(tweet._json['user']['name'])
                     self.f1.add_text(tweet.text[13:],tweet.created_at)
