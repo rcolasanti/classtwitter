@@ -1,0 +1,6 @@
+  410  mkdir classtwitter-pages
+  411  cd classtwitter-pages/
+  412  git init
+  415  git remote add origin https://github.com/rcolasanti/classtwitter.git
+  418  git checkout --orphan gh-pages
+  424  git pull origin gh-pages
