@@ -1,0 +1,5 @@
+  412  git init
+  415  git remote add origin https://github.com/rcolasanti/classtwitter.git
+  380  git checkout master
+  440  git push origin master
+  441  history > howto.txt
