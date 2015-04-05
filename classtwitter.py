@@ -34,7 +34,7 @@ from Tkinter import *
 # File contining the twitter keys
 from twitterinit import cfg,account
 from matplotlib.figure import Figure
-
+from tkFileDialog   import askopenfilename,asksaveasfile
 
 class TkinterText(Frame):
     def __init__(self, parent):
@@ -59,26 +59,31 @@ class TkinterText(Frame):
         
 
 class TkTwitter:
-    def __init__(self,question,results_file):
+    def __init__(self):#,question,results_file):
         self.api = self.get_api(cfg)
         # Dictionay of responces
         self.results = dict()
         self.time_start =datetime.datetime.fromtimestamp(time.mktime(time.localtime()))
-        self.save_file = results_file
+        #self.save_file = results_file
 
         self.window = Tk()
         self.window.resizable(width=FALSE, height=FALSE)
         
+        menu = Menu(self.window)
+        self.window.config(menu=menu)
+        filemenu = Menu(menu)
+        menu.add_cascade(label="File", menu=filemenu)
+        filemenu.add_command(label="Load Question",command = self.load_question)
+        filemenu.add_command(label="Save Tweets",command = self.save_tweets)
         # Question
-        lb1 = Label(self.window, text=question, font='arial 20 bold', wraplength=900, justify=LEFT)
-        lb1.pack(side=TOP,expand=True, fill='both')
+        self.question_lb1 = Label(self.window, text="Question", font='arial 20 bold', wraplength=900, justify=LEFT)
+        self.question_lb1.pack(side=TOP,expand=True, fill='both')
         
         self.f1 = TkinterText(self.window)
         self.f1.pack(side = TOP, padx =20, pady =20)
         
         btn = Button( self.window , text = 'Finish', command = self.save_tweets)
         btn.pack(side = BOTTOM, padx =20, pady =20)
-        self. window.after(2000,self.task)
         self. window.mainloop()
                 
     def get_api(self,cfg):
@@ -87,12 +92,23 @@ class TkTwitter:
         auth.set_access_token(cfg['access_token'], cfg['access_token_secret'])
         return tweepy.API(auth)
 
+    def load_question(self):
+        # calls the open file dialog box
+        name = askopenfilename()
+        with open(name) as in_file:
+            for line in in_file:
+                self.question_lb1.configure(text=line)
+        self. window.after(2000,self.task)
+                
+
+
     def save_tweets(self):
         # Seve the responces
-        f = open(self.save_file,"w")
+        # Open the save dialog box
+        out_file = asksaveasfile(mode='w')
         for r in self.results:
-            f.write(self.results[r]+"\n") 
-        f.close()
+            out_file.write(self.results[r]+"\n") 
+        out_file.close()
         exit(0)
         
     def task(self):
@@ -118,11 +134,8 @@ class TkTwitter:
 
 
 def main():
-    print (len(sys.argv))
-    if len(sys.argv)==3:
-        # Get the question [1] nad the filename [2] for the responces
-        # from the command line attributes
-        TkTwitter(sys.argv[1],sys.argv[2])
+    TkTwitter()
+
     
 if __name__ == "__main__":
     main()
