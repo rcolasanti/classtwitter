@@ -1,0 +1,31 @@
+    # introduction 
+    I have created an in lecture online questioning software that is based upon the social media format twitter. Twitter allows the instant messaging of 120 characters by the account holder. The tweet can be directed to the attention of a particular account with the use of a @address. The software I developed allows questions to be posed to a large lecture audience and for the answers to be tweeted live during the lecture. The software analyses the incoming tweets to an account and displays just the tweets that have been sent by the students to that question. The software allows for assertive questioning method to be used with large student audience. The software was successfully used on a number  of occasions with the developing quality software module of the Computer science degree at the University of Cardiff
+    # questioning
+    The role of questioning in developing true understanding has long been recognised. The Socratic method was predicated not on the knowledge of the teacher but on their ability to examine their students beliefs (Ausubel 1968),one hundred years ago Dewey singled out questioning as core to his "Democratic classroom" (Dewey 1916 (1985)). Today Petty, in his book evidence based teaching (Petty 2009) highlights that the ability to effectively use in lesson questioning is one of the main indicators of good teaching practice. For the student questioning helps them check there understanding during the lesson. Questioning also helps with student motivation as correctly answering questions is an indicator of success and thus builds confidence (Petty 2014). Questioning also helps the student to be an active learner, utilises higher level thinking skills and helps make learning transferable (Petty 2014). For the lecturer, including questioning throughout will identify students prior knowledge and thus help uncover any incorrect assumptions held by any of the students. Questions placed at strategic point in the lecture will also help with judging the pace of the lecture. This contribute to the "self correcting classroom" (Rowley 1997) Questioning is central to most educational theory. Constructivism states that learning can only occur by students constructing meaning out of new knowledge by connecting it to prior learning (Fontana 1995). The lecturer can only be sure that this occurs by evaluation during the lecture. Questioning, in the form of recall is also core to the transfer of knowledge from short term memory to long term memory(Petty 2014).All of Bloom's 6 taxa require questioning to evaluate their completion. However the higher level application, analysis synthesis and evaluation that questioning at there core(Bloom 1956). Of Gagné Nine steps of instruction,stimulate recall of prior learning,Provide feedback and assess performance all require questioning. 
+    Petty(2014) points out that the most effective type of questioning is assertive questioning. Here questions are posed groups of students, they are asked to discuss the question and give a group answer. The lecture can then ask members of the group for their reasoning. The advantage of this method is that all students participate, allows teacher feedback     
+    
+    
+    
+    #class
+    ​ lecture forms part of a shared first year module This between the Computer Science degree and the Business Information System degree.Both degrees are delivered by the School of Computing at Cardiff university.There are approximately 120 students in total registered for this module.The computing background of the students on both of the degrees is varied. For many students this degree will be their first encounter with computer programming and software engineering. Others will have some prior programming experience, while a few will have considerable experience. This module is called “Developing quality software” and deals mainly with software engineering practices and methods. The module is in two parts. The main part deals with the software engineering process,team dynamics and programming practices. The minor part deals with the specific software design language UML. The two parts are delivered separately by different tutors. The course consists of approximately 30 lectures in total and a similar number of tutorials and labs. The summative assessment for this module is a software project which is delivered by the students working in teams.
+    The class size is approximately 120 and the lecture theatre is unusually narrow in width and long in depth. This precludes activities such as snow balling (it would take an age to get things passed down from the back to the front) and students coming down to write things on the board. Although the students work in teams for their course work, these teams are assigned by the course leader. This, along with the two different degree groups, means that the students do not sit in their teams. 
+
+    #twitter
+
+# method
+
+
+#use
+
+# future
+
+
+Refs
+Ausubel, D. P., Novak, J. D., & Hanesian, H. (1968). Educational psychology: A cognitive view.
+Bloom, Benjamin S.(1956) ​Taxonomy of educational objectives. Vol. 1: Cognitive domain.New York: McKay 
+Dewey, J. (1985). Democracy and education 1916. J. A. Boydston, & P. Baysinger (Eds.). Carbondale: Southern Illinois University Press.
+Gagné, R. M. (1985). ​ conditions of learning and theory of instruction​. New York: Holt, Rinehart and Winston.
+Fontana, D. (1995). Psychology for teachers. Hampshire, UK: Macmillan.
+Petty, G. (2006) Evidence-Based Teaching. Cheltenham: Nelson Thornes .
+Petty, G. (2014). Teaching today: A practical guide. Nelson Thornes.
+Rowley, S. D., & Nielsen, H. D. (1997). School and Classroom Organization in the Periphery. New York: Garland Publishing.
